@@ -1,0 +1,24 @@
+/*Padding and border will not add on top of any width or height set on a element but be included in the final size*/
+*, 
+*::before, 
+*::after {
+    box-sizing: border-box;
+}
+
+/*Cancels out some reset or styles that come baked in every browser*/
+* {
+    margin: 0;
+}
+
+/*remove underline link*/
+a {
+    text-decoration: none;
+}
+
+/*Prevent giant image size*/
+img, 
+picture,
+svg {
+    max-width: 100%;
+    display: block;
+}
